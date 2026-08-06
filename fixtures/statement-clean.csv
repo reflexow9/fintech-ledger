@@ -1,0 +1,9 @@
+Transaction Date,Description,Amount,Currency,Category,Status
+2026-05-02,Silpo Market,-64.20,USD,groceries,completed
+2026-05-02,Uklon,-8.40,USD,transport,completed
+2026-05-03,Aroma Kava,-4.10,USD,dining,completed
+2026-05-05,Salary — Northwind,5200.00,USD,revenue,completed
+2026-05-06,Apartment Rent,-1450.00,USD,housing,completed
+2026-05-08,Spotify,-10.99,USD,software,completed
+2026-05-11,Rozetka,-212.65,USD,other,completed
+2026-05-14,Kyivstar,-32.00,USD,utilities,pending

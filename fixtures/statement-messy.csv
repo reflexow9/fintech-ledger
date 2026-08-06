@@ -1,0 +1,9 @@
+Booking Date;Payee;Value;Ccy;Memo
+02/05/2026;"REWE Markt, Berlin";-64,20;EUR;weekly shop
+03/05/2026;Deutsche Bahn;-1.234,56;EUR;ICE ticket
+04/05/2026;Client Invoice;(2.500,00);EUR;refund issued
+05/13/2026;Adobe;-59,99;EUR;
+not-a-date;Figma;-45,00;EUR;broken row
+06/05/2026;WeWork;-320,00;XBT;unsupported currency
+02/05/2026;"REWE Markt, Berlin";-64,20;EUR;duplicate of line 2
+2099-01-01;Time Traveller;-10,00;EUR;future date

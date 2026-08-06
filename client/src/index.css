@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Sans:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #0a0e14;
+    --surface: #111721;
+    --surface-raised: #161d29;
+    --rule: #1d2531;
+    --graphite: #8896a8;
+    --parchment: #e8ecf2;
+    --gold: #c8a44d;
+    --inflow: #34d399;
+    --outflow: #fb7185;
+  }
+
+  [data-theme='light'] {
+    --ink: #f7f8fa;
+    --surface: #ffffff;
+    --surface-raised: #ffffff;
+    --rule: #e2e6ec;
+    --graphite: #5a6675;
+    --parchment: #0f1621;
+    --gold: #9a7b25;
+    --inflow: #047857;
+    --outflow: #be123c;
+  }
+
+  html {
+    background: var(--ink);
+    color: var(--parchment);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .figure {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums slashed-zero;
+    font-feature-settings: 'tnum' 1, 'zero' 1;
+    letter-spacing: -0.01em;
+  }
+
+  .display {
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    letter-spacing: -0.022em;
+  }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--graphite);
+  }
+
+  .forecast-hatch {
+    background-image: repeating-linear-gradient(
+      45deg,
+      color-mix(in srgb, var(--gold) 14%, transparent) 0px,
+      color-mix(in srgb, var(--gold) 14%, transparent) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  }
+}
