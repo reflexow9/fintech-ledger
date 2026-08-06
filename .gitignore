@@ -144,3 +144,15 @@ vite.config.ts.timestamp-*
 
 **/node_modules/
 .DS_Store
+**/dist/
+
+Thumbs.db
+*.local
+
+.vscode/
+.idea/
+
+*.db
+*.sqlite
+.serverless/
+
